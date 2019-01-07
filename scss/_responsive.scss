@@ -26,6 +26,10 @@
   }
   /*  navbar
 ============================ */
+  .navbar {
+    background: $backgroundNav !important;
+  }
+
   .navbar-toggler {
     border: 1px solid #fff;
     opacity: 0.5;
@@ -38,7 +42,7 @@
 
   .navbar-brand {
     margin: 0 !important;
-    padding: $paddinBase !important;
+    padding: $paddinBase*1.5 !important;
   }
 
   .navbar {
