@@ -1,0 +1,116 @@
+.footer {
+  padding: $paddinBase*7 0 0;
+  background: darken($backgroundDark, 85%);
+
+  h3 {
+    text-align: left;
+    font-size: 35px;
+    color: $primaryColorLight;
+    text-shadow: 1px 2px 2px grey;
+  }
+
+  &-link {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 75%;
+      width: 1px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      background-color: $primaryColorLight;
+    }
+
+    span {
+      padding: 0 $paddinBase*1.5;
+      opacity: $opacityBase;
+    }
+
+    i {
+      padding-bottom: $paddinBase*2;
+      font-size: 25px;
+      color: $primaryColorLight;
+
+      &:hover {
+        opacity: $opacityBase;
+      }
+    }
+
+    a:hover {
+      color: $primaryColorLight;
+      opacity: $opacityBase/2;
+    }
+  }
+
+  &-message {
+    padding-right: $paddinBase*6;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 60%;
+      width: 1px;
+      position: absolute;
+      right: 10px;
+      top: 50px;
+      background-color: $primaryColorLight;
+    }
+
+    p {
+      color: $primaryColorLight;
+    }
+  }
+
+  &-form {
+    text-align: center;
+
+    input[type="submit"] {
+      width: 93%;
+      color: $colorWhite;
+      text-transform: uppercase;
+      font-size: 12px;
+      border-radius: 2px;
+      font-weight: 700;
+      background: transparent;
+      border-color: $secondaryColor;
+      text-align: center;
+    }
+
+    input[type="submit"]:hover {
+      background: $secondaryColor;
+      transition: all 0.5s ease 0s;
+    }
+  }
+
+  &-sub {
+    color: $primaryColorLight;
+    height: 50px;
+    background: darken($backgroundDark,88%);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-align: center;
+
+    &:hover .fa-heart {
+      animation: blinkHeart 1s infinite;
+    }
+
+    .fa-heart {
+      color: red;
+    }
+  }
+
+  &-scrollup a:hover {
+    color: $secondaryColor;
+  }
+}
+@keyframes blinkHeart {
+  50% {
+    color: lighten(red, 10%);
+    font-size: 13px;
+  }
+}

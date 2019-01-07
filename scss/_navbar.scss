@@ -1,0 +1,69 @@
+.navbar {
+  text-transform: uppercase;
+  background: transparent !important;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  padding: $paddinBase*1.5 0;
+
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  & a {
+    font-weight: 700;
+    display: block;
+    padding: $paddinBase*3 $paddinBase*2;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  & a:hover {
+    color: $secondaryColor;
+  }
+
+  &-brand {
+    margin-top: -$marginBase;
+  }
+
+  #logo {
+    text-transform: lowercase;
+    font-size: 25px;
+    font-family: $fontTitle;
+    opacity: $opacityBase;
+    color: #fff;
+    animation: color-change 5s infinite;
+    line-height: 40px;
+  }
+  @-webkit-keyframes color-change {
+    0% {
+      text-shadow: 5px 2px 15px rgba(0, 214, 70, 0.8);
+    }
+
+    25% {
+      text-shadow: 5px 3px 25px rgba(0, 214, 70, 1);
+    }
+
+    50% {
+      text-shadow: 10px 5px 35px rgba(0, 214, 70, 1);
+    }
+
+    75% {
+      text-shadow: 15px 7px 30px rgba(0, 214, 70, 0.4);
+    }
+
+    100% {
+      text-shadow: 10px 2px 15px rgba(0, 214, 70, 0.8);
+    }
+  }
+}
+
+.top-nav-collapse {
+  background: $backgroundNav !important;
+  opacity: 0.95;
+}
+
+.navbar.top-nav-collapse {
+  padding: 0;
+}

@@ -1,0 +1,125 @@
+.skills {
+  background: $backgroundDark;
+  padding: $paddinBase*10 0 $paddinBase*5;
+
+  h3 {
+    text-shadow: 1px 2px 5px grey;
+  }
+
+  &-left {
+    :last-child {
+      margin-top: $marginBase*2;
+    }
+
+    &:hover strong {
+      animation: blink 1.5s;
+    }
+    @keyframes blink {
+      50% {
+        color: darken($secondaryColor, 20%);
+        text-shadow: 2px 2px 3px grey;
+      }
+    }
+  }
+
+  &-bar {
+    list-style: none;
+    padding: 0;
+    margin: $marginBase*6 0;
+    text-shadow: 1px 1px 7px grey;
+
+    li {
+      height: 0.6rem;
+      width: 100%;
+      margin-bottom: $marginBase*5;
+      padding: 0;
+      position: relative;
+
+      strong {
+        position: absolute;
+        left: 0;
+        top: -3rem;
+        color: $primaryColorDark;
+        letter-spacing: 1px;
+        font-size: 17px;
+        line-height: 60px;
+      }
+    }
+
+    &-progress {
+      background-image: linear-gradient(to right, #006b11, #171717);
+      height: 100%;
+      border-radius: 5px;
+
+      &.bar-effect-back {
+        background: darken(#fff, 30%);
+      }
+
+      &.bar-effect span {
+        background: darken($secondaryColor, 20%);
+      }
+
+      span {
+        display: block;
+        background: $secondaryColor;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      #css3,
+      #html5,
+      #laravel,
+      #sass {
+        width: 85%;
+      }
+
+      #jquery,
+      #php {
+        width: 70%;
+      }
+
+      #mysql {
+        width: 65%;
+      }
+
+      #wordpress {
+        width: 75%;
+      }
+    }
+  }
+
+  &-bottom h4 {
+    margin: $marginBase*5;
+    text-shadow: 1px 2px 5px grey;
+  }
+
+  &-bottom-item {
+    margin-right: $marginBase*5;
+    border-radius: 5px;
+    text-align: center;
+    padding: $paddinBase*3 $paddinBase*4;
+    box-shadow: 0 10px 65px 10px rgba(0, 0, 0, 0.12);
+
+    &:hover i {
+      color: $secondaryColor;
+      transform: rotateY(360deg);
+      animation: shadow 2s;
+    }
+    @keyframes shadow {
+      50% {
+        text-shadow: 5px 20px 30px grey;
+        font-size: 50px;
+      }
+    }
+
+    h5 {
+      padding: $paddinBase*2 0 $paddinBase;
+    }
+
+    i {
+      color: darken($primaryColorLight, 10%);
+      font-size: 40px;
+      transition: transform 2.5s ease;
+    }
+  }
+}

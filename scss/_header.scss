@@ -1,0 +1,58 @@
+.slider-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $secondaryColor;
+}
+
+.small-content-down,
+.small-content-up {
+  text-align: center;
+  letter-spacing: 7px;
+  color: $primaryColorLight;
+  font-size: 25px;
+}
+
+.big-title {
+  font-family: 'Permanent Marker', cursive;
+  color: $primaryColorLight !important;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 10px;
+  margin-bottom: $marginBase*3;
+
+  #target {
+    display: none;
+  }
+}
+
+.small-content-down {
+  font-size: 35px;
+  opacity: $opacityBase;
+
+  & span {
+    opacity: 0;
+  }
+}
+/*--------------------------------
+ ECHO effect
+----------------------------------*/
+.fadeInDown {
+  animation: fadeInDown;
+}
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

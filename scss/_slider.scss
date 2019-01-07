@@ -1,0 +1,73 @@
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.nivo-caption {
+  display: none;
+}
+
+.slider-direction {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  z-index: 999;
+  display: none;
+}
+
+.nivo-caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+
+.slider-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8ecc3b;
+  height: 5px;
+  animation: myfirst 4000ms ease-in-out;
+}
+@keyframes myfirst {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.s-tb {
+  display: table;
+  height: 85%;
+  width: 100%;
+  float: left;
+}
+
+.s-tb-c {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+
+.t-cn {
+  text-align: center;
+}

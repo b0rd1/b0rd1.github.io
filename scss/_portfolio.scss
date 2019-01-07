@@ -1,0 +1,124 @@
+.portfolio {
+  padding: $paddinBase*10 0 $paddinBase*5;
+
+  h3 {
+    text-shadow: 1px 2px 5px grey;
+  }
+
+  p a {
+    color: lighten($primaryColorDark,35%);
+  }
+
+  &-filter {
+    margin: $marginBase*4 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        cursor: pointer;
+        margin: $marginBase*2 $marginBase*1.5 $marginBase*3 0;
+        padding: 0 $paddinBase;
+        transition: all 0.5s ease 0s;
+        display: inline-block;
+
+        i {
+          margin-right: $marginBase/2;
+        }
+
+        &:hover {
+          background: transparent !important;
+          border-bottom: 3px solid #4B4B4B;
+        }
+
+        &.active {
+          color: lighten($primaryColorDark,15%);
+          padding-bottom: $paddinBase/2;
+          border-bottom: 3px solid;
+        }
+      }
+    }
+  }
+
+  &-list {
+    .mix {
+      display: none;
+    }
+
+    &-items {
+      position: relative;
+      margin-left: -$marginBase;
+      cursor: pointer;
+      overflow: hidden;
+      margin-bottom: $marginBase;
+
+      & img {
+        width: 100%;
+        display: block;
+        transition: all 0.4s linear;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      &:hover .portfolio-list-mask {
+        width: 100%;
+        height: 100%;
+        background: rgba(21, 21, 21, 0.7);
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+        border: 1px transparent !important;
+      }
+    }
+
+    &-mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0;
+      transition: all 0.2s linear;
+      display: inline-block;
+      text-align: left;
+      padding-left: 0;
+
+      &:hover {
+        transition: all 0.4s;
+        padding-left: 30px;
+      }
+
+      h6 {
+        margin-top: $marginBase*7;
+        font-size: 20px;
+        color: $colorWhite;
+        transition: all 0.5s;
+      }
+
+      p {
+        font-size: 15px;
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  &-link {
+    padding: $paddinBase*4 0;
+  }
+}
+/*  Bootstrap Modal
+============================ */
+.modal-body,
+.modal-content {
+  width: 1000px !important;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  bottom: 0;
+  left: 0;
+}
