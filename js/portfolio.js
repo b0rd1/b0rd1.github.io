@@ -93,7 +93,7 @@ for (var i = 0; i < works.length; i++) {
   var modalId = media.modal;
 
   $('.portfolio-list').append(`
-    <div data-toggle="modal" data-target="#` + modalId + `" div class="col-12 col-lg-3 mix ` + category + `" data-src="images/work/` + video + `" data-id="` + id + `">
+    <div data-toggle="modal" data-target="#` + modalId + `" div class="col-12 col-md-4 col-lg-3 mix ` + category + `" data-src="images/work/` + video + `" data-id="` + id + `">
       <article class="portfolio-list-items">
         <div class="portfolio-list-img">
           <img src="images/work/` + image + `">
