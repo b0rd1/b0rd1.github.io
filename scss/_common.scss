@@ -1,5 +1,13 @@
 body {
   font-family: $fontText;
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #191919;
+  }
 }
 
 a {
