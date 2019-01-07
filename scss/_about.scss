@@ -9,7 +9,7 @@
     padding: 0 $paddinBase*3;
 
     &:hover strong {
-      animation: blink 1.5s;
+      animation: blink 1.5s infinite;
     }
     @keyframes blink {
       50% {
