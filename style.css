@@ -358,17 +358,14 @@ h6 {
 
 .about {
   padding: 100px 0;
+  text-align: justify;
 }
 
 .about h3 {
   text-shadow: 1px 2px 5px grey;
 }
 
-.about-left {
-  padding: 0 30px;
-}
-
-.about-left:hover strong {
+.about-right:hover strong {
   -webkit-animation: blink 1.5s infinite;
           animation: blink 1.5s infinite;
 }
@@ -394,6 +391,10 @@ h6 {
 
 .skills h3 {
   text-shadow: 1px 2px 5px grey;
+}
+
+.skills-left {
+  text-align: justify;
 }
 
 .skills-left :last-child {
@@ -462,7 +463,7 @@ h6 {
 .skills-bar-progress #html5,
 .skills-bar-progress #laravel,
 .skills-bar-progress #sass {
-  width: 85%;
+  width: 80%;
 }
 
 .skills-bar-progress #jquery,
@@ -527,6 +528,7 @@ h6 {
 
 .portfolio {
   padding: 100px 0 50px;
+  text-align: justify;
 }
 
 .portfolio h3 {
@@ -702,6 +704,7 @@ h6 {
 .footer-message {
   padding-right: 60px;
   position: relative;
+  text-align: justify;
 }
 
 .footer-message:after {
@@ -774,6 +777,18 @@ h6 {
   50% {
     color: #ff3333;
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-left {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .about-left img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
@@ -860,11 +875,15 @@ h6 {
     display: none;
   }
 
-  .about-left {
+  .about-right {
     margin: 0;
   }
 
   .skills {
+    text-align: center;
+  }
+
+  .skills-left {
     text-align: center;
   }
 
@@ -940,7 +959,6 @@ h6 {
   }
 
   .footer-message {
-    text-align: left;
     padding-right: 0;
   }
 

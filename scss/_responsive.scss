@@ -1,3 +1,16 @@
+@media screen and (max-width: 1024px) {
+  .about {
+    &-left {
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   /*  Other
 ============================ */
@@ -73,13 +86,17 @@
       display: none;
     }
 
-    &-left {
+    &-right {
       margin: 0;
     }
   }
 
   .skills {
     text-align: center;
+
+    &-left {
+      text-align: center;
+    }
 
     &-bar {
       margin-bottom: 0;
@@ -149,7 +166,6 @@
     }
 
     &-message {
-      text-align: left;
       padding-right: 0;
 
       p {

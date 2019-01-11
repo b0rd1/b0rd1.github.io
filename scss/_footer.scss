@@ -48,6 +48,7 @@
   &-message {
     padding-right: $paddinBase*6;
     position: relative;
+    text-align: justify;
 
     &:after {
       content: '';

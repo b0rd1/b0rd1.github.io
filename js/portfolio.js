@@ -4,7 +4,7 @@ var works = [{
     image: 'cacciatrici.png',
     category: 'category-1',
     title: 'Cacciatrici del Reale',
-    description: 'Sito di Fotografia',
+    description: 'www.cacciatricidelreale.it',
     modal: 'modalId1'
   },
   {

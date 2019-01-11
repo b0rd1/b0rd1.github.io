@@ -7,6 +7,8 @@
   }
 
   &-left {
+    text-align: justify;
+
     :last-child {
       margin-top: $marginBase*2;
     }
@@ -70,7 +72,7 @@
       #html5,
       #laravel,
       #sass {
-        width: 85%;
+        width: 80%;
       }
 
       #jquery,
