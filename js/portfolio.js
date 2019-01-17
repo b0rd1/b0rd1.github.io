@@ -35,6 +35,15 @@ var works = [{
     modal: 'modalId3'
   },
   {
+    id: 10,
+    video: 'app_book.webm',
+    image: 'app_book.jpg',
+    category: 'category-2',
+    title: 'Web App La Bokeria',
+    description: 'Companion App <br>de "La Bokeria"',
+    modal: 'modalId10'
+  },
+  {
     id: 2,
     video: 'gallery.mp4',
     image: 'gallery.png',
@@ -109,7 +118,7 @@ for (var i = 0; i < works.length; i++) {
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
-            <video style="width: 100%" src="images/work/` + video + `" autoplay="autoplay"></video>
+            <video style="width: 100%" src="images/work/` + video + `" muted="muted" autoplay="autoplay"></video>
           </div>
         </div>
       </div>

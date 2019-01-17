@@ -123,3 +123,13 @@
   bottom: 0;
   left: 0;
 }
+
+[data-id='10'] article div img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+[src='images/work/app_book.webm'] {
+  width: 30% !important;
+  margin: 0 35%;
+}
