@@ -8,6 +8,14 @@ var works = [{
     modal: 'modalId1'
   },
   {
+    id: 11,
+    video: 'bookeria.mp4',
+    image: 'bookeria.jpg',
+    category: 'category-1',
+    title: 'La Bookeria',
+    description: 'www.labookeria.it',
+    modal: 'modalId11'
+  }, {
     id: 8,
     video: 'visual_sport.webm',
     image: 'visual_sport.png',
@@ -15,8 +23,7 @@ var works = [{
     title: 'Visual Sport',
     description: 'Gestionale Giocatori di Basket',
     modal: 'modalId8'
-  },
-  {
+  }, {
     id: 4,
     video: 'focus.mp4',
     image: 'focus.png',
@@ -24,8 +31,7 @@ var works = [{
     title: 'Focus List Replica',
     description: 'Replica del sito focuslist',
     modal: 'modalId4'
-  },
-  {
+  }, {
     id: 3,
     video: 'moviedb.mp4',
     image: 'moviedb.png',
@@ -33,17 +39,15 @@ var works = [{
     title: 'The Movie DB Replica',
     description: 'Utilizzo API The Movie DB',
     modal: 'modalId3'
-  },
-  {
+  }, {
     id: 10,
-    video: 'app_book.webm',
+    video: 'app_book.mp4',
     image: 'app_book.jpg',
     category: 'category-2',
     title: 'Web App La Bokeria',
     description: 'Companion App <br>de "La Bokeria"',
     modal: 'modalId10'
-  },
-  {
+  }, {
     id: 2,
     video: 'gallery.mp4',
     image: 'gallery.png',
@@ -51,8 +55,7 @@ var works = [{
     title: 'jQuery Gallery',
     description: 'Semplice Galleria in jquery',
     modal: 'modalId2'
-  },
-  {
+  }, {
     id: 5,
     video: 'giallozafferano.mp4',
     image: 'giallozafferano.png',
@@ -60,8 +63,7 @@ var works = [{
     title: 'Giallo Zafferano Replica',
     description: 'Replica del sito <br> giallozafferano',
     modal: 'modalId5'
-  },
-  {
+  }, {
     id: 6,
     video: 'hubspot.mp4',
     image: 'hubspot.png',
@@ -69,8 +71,7 @@ var works = [{
     title: 'Hub Spot Replica',
     description: 'Replica del sito hubspot',
     modal: 'modalId6'
-  },
-  {
+  }, {
     id: 7,
     video: 'teambit.mp4',
     image: 'teambit.png',
@@ -78,8 +79,7 @@ var works = [{
     title: 'Team Bit Replica',
     description: 'Replica del sito teambit',
     modal: 'modalId7'
-  },
-  {
+  }, {
     id: 9,
     video: 'whatsapp.webm',
     image: 'whatsapp.png',
