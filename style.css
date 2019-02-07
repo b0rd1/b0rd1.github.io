@@ -938,6 +938,10 @@ h6 {
     margin: 0 auto;
   }
 
+  [src="images/work/app_book.mp4"] {
+    height: 200px;
+  }
+
   .modal-body,
   .modal-content {
     width: 100% !important;
