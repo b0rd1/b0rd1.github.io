@@ -7,7 +7,7 @@
   }
 
   p a {
-    color: lighten($primaryColorDark,35%);
+    color: lighten($primaryColorDark, 35%);
   }
 
   &-filter {
@@ -35,7 +35,7 @@
         }
 
         &.active {
-          color: lighten($primaryColorDark,15%);
+          color: lighten($primaryColorDark, 15%);
           padding-bottom: $paddinBase/2;
           border-bottom: 3px solid;
         }
@@ -109,6 +109,12 @@
     padding: $paddinBase*4 0;
   }
 }
+
+[src="images/work/app_book.mp4"] {
+  height: 500px;
+}
+
+
 /*  Bootstrap Modal
 ============================ */
 .modal-body,

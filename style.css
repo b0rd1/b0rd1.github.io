@@ -472,7 +472,7 @@ h6 {
 }
 
 .skills-bar-progress #mysql {
-  width: 65%;
+  width: 60%;
 }
 
 .skills-bar-progress #wordpress {
@@ -635,6 +635,10 @@ h6 {
 
 .portfolio-link {
   padding: 40px 0;
+}
+
+[src="images/work/app_book.mp4"] {
+  height: 500px;
 }
 
 /*  Bootstrap Modal
