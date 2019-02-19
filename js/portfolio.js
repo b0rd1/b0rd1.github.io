@@ -24,6 +24,14 @@ var works = [{
     description: 'Gestionale Giocatori di Basket',
     modal: 'modalId8'
   }, {
+    id: 12,
+    video: 'shiatsu.webm',
+    image: 'shiatsu.jpg',
+    category: 'category-1',
+    title: 'Shiatsu AOI',
+    description: 'www.shiatsuaoi.it',
+    modal: 'modalId12'
+  }, {
     id: 4,
     video: 'focus.mp4',
     image: 'focus.png',
