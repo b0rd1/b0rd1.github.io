@@ -16,6 +16,7 @@
     &:hover strong {
       animation: blink 1.5s infinite;
     }
+
     @keyframes blink {
       50% {
         color: darken($secondaryColor, 20%);
@@ -70,12 +71,11 @@
 
       #css3,
       #html5,
-      #jquery,
-      #sass {
+      #jquery {
         width: 80%;
       }
 
-      #laravel,
+
       #php {
         width: 60%;
       }
@@ -84,8 +84,10 @@
         width: 60%;
       }
 
-      #wordpress {
-        width: 80%;
+      #wordpress,
+      #sass,
+      #laravel {
+        width: 75%;
       }
     }
   }
@@ -107,6 +109,7 @@
       transform: rotateY(360deg);
       animation: shadow 2s;
     }
+
     @keyframes shadow {
       50% {
         text-shadow: 5px 20px 30px grey;

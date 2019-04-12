@@ -461,12 +461,10 @@ h6 {
 
 .skills-bar-progress #css3,
 .skills-bar-progress #html5,
-.skills-bar-progress #jquery,
-.skills-bar-progress #sass {
+.skills-bar-progress #jquery {
   width: 80%;
 }
 
-.skills-bar-progress #laravel,
 .skills-bar-progress #php {
   width: 60%;
 }
@@ -475,8 +473,10 @@ h6 {
   width: 60%;
 }
 
-.skills-bar-progress #wordpress {
-  width: 80%;
+.skills-bar-progress #wordpress,
+.skills-bar-progress #sass,
+.skills-bar-progress #laravel {
+  width: 75%;
 }
 
 .skills-bottom h4 {
